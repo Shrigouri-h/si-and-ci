@@ -1,4 +1,8 @@
-FROM python:3.12
+
+FROM python:3.12-slim
+
 WORKDIR / app
-COPY "interest.py"
+
+COPY interest.py .
+
 CMD ["python", "interest.py"]
